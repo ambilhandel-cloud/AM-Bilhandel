@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AM Bilhandel</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Arial, sans-serif; background:#f5f5f5; color:#111; }
+
+    header {
+      background:#000;
+      color:#fff;
+      padding:16px 24px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    header strong { font-size:20px; }
+
+    nav { display:flex; gap:16px; }
+    nav a { color:#fff; text-decoration:none; font-weight:bold; }
+
+    .hero {
+      background:#1a1a1a;
+      color:#fff;
+      padding:80px 20px;
+      text-align:center;
+    }
+
+    .hero h1 { font-size:42px; margin-bottom:10px; }
+    .hero p { font-size:18px; }
+
+    .container {
+      padding:60px 20px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    h2 { margin-bottom:20px; }
+
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+      gap:24px;
+    }
+
+    .card {
+      background:#fff;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 8px 20px rgba(0,0,0,0.12);
+      display:flex;
+      flex-direction:column;
+    }
+
+    .card img {
+      width:100%;
+      height:200px;
+      object-fit:cover;
+    }
+
+    .content {
+      padding:16px;
+      flex:1;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+
+    .price {
+      font-weight:bold;
+      font-size:18px;
+      margin:10px 0;
+    }
+
+    .btn {
+      display:inline-block;
+      background:#000;
+      color:#fff;
+      padding:10px 16px;
+      border-radius:8px;
+      text-decoration:none;
+      text-align:center;
+    }
+
+    form {
+      max-width:500px;
+    }
+
+    form input, form textarea {
+      width:100%;
+      padding:12px;
+      margin-bottom:12px;
+      border-radius:6px;
+      border:1px solid #ccc;
+    }
+
+    footer {
+      background:#000;
+      color:#fff;
+      text-align:center;
+      padding:20px;
+      font-size:14px;
+    }
+
+    /* Mobil */
+    @media (max-width: 768px) {
+      .hero h1 { font-size:28px; }
+      .hero p { font-size:16px; }
+      nav { width:100%; justify-content:center; margin-top:10px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <strong>AM Bilhandel</strong>
+  <nav>
+    <a href="#home">Forside</a>
+    <a href="#cars">Biler</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1>Brugte kvalitetsbiler</h1>
+  <p>Klar til levering – ærlig handel og skarpe priser</p>
+</section>
+
+<section id="cars" class="container">
+  <h2>Biler til salg</h2>
+  <p>Vi har desværre ingen biler til salg lige nu.<br>Hold øje med siden eller kontakt os for kommende biler.</p>
+</section>
+
+<section id="contact" class="container">
+  <h2>Kontakt</h2>
+  <p><strong>Adresse:</strong> Gl Kolding Landevej 60, 7100 Vejle, Denmark</p>
+  <p><strong>CVR:</strong> 46148509</p>
+  <p><strong>Telefon:</strong> 50 34 12 84</p>
+
+  <form>
+    <input type="text" placeholder="Navn" />
+    <input type="email" placeholder="Email" />
+    <textarea rows="5" placeholder="Besked"></textarea>
+    <button class="btn">Send</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 AM Bilhandel
+</footer>
+
+</body>
+</html>
